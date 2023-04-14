@@ -29,20 +29,20 @@
     </div>
 
     <div class="container">
-      <ul class="list">
-        <li>
-          <span>Controllare la lista della spesa</span>
+
+      <h2 v-if="tasks.length === 0">Non ci sono promemoria in lista &#128521;</h2>
+
+      <ul v-else class="list">
+
+        <li v-for="task in tasks" :class="{'check' : task.check}">
+
+          <span>{{task.text}}</span>
           <i class="fa-solid fa-trash fa-beat"></i>
+          
         </li>
-        <li>
-          <span>Cambiero olio auto</span>
-          <i class="fa-solid fa-trash fa-beat"></i>
-        </li>
-        <li>
-          <span>Ripassare Javascript</span>
-          <i class="fa-solid fa-trash fa-beat"></i>
-        </li>
+        
       </ul>
+
 
 
 

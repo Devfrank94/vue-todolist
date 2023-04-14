@@ -46,8 +46,12 @@ body{
   margin-right: 10px;
 }
 
-ul li i{
+.list li i{
   color: #001533;
+}
+
+.list li i:hover{
+  color: red;
 }
 
 .list{
@@ -68,4 +72,14 @@ ul li i{
 
 .list li:hover{
   background-color: #ebedee;
+}
+
+.list li.check span{
+  text-decoration: line-through 1px #001533;
+  color: #00E165;
+}
+
+.container h2{
+  text-align: center;
+  margin-top: 20px;
 }
