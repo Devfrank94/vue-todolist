@@ -39,6 +39,7 @@ body{
 .ins-data button{
   background-color:#001533;
   color: white;
+  cursor: pointer;
 }
 
 .ins-data input{

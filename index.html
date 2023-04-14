@@ -24,8 +24,8 @@
     </div>
 
     <div class="ins-data">
-      <input type="text" placeholder="Nuovo Promemoria">
-      <button>Aggiungi</button>
+      <input v-model.trim="newTsk" @keyup.enter="addTsk" type="text" placeholder="Nuovo Promemoria">
+      <button @click="addTsk">Aggiungi</button>
 
         <div class="mess-err">{{errorMsg}}</div>
       
