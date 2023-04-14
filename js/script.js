@@ -41,7 +41,7 @@ methods:{
   // Funzione aggiungi Task
 
   addTsk(){
-    if(this.newTsk.length > 5){
+    if(this.newTsk.length > 4){
       const newTsk = {
         text: this.newTsk,
         check: false
