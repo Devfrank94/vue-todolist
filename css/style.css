@@ -83,3 +83,10 @@ body{
   text-align: center;
   margin-top: 20px;
 }
+
+.ins-data .mess-err{
+  color: red;
+  font-size: 20px;
+  padding-top: 20px;
+
+}

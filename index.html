@@ -26,6 +26,9 @@
     <div class="ins-data">
       <input type="text" placeholder="Nuovo Promemoria">
       <button>Aggiungi</button>
+
+        <div class="mess-err">{{errorMsg}}</div>
+      
     </div>
 
     <div class="container">
@@ -34,11 +37,11 @@
 
       <ul v-else class="list">
 
-        <li v-for="task in tasks" :class="{'check' : task.check}">
+        <li v-for="(task,index) in tasks" :class="{'check' : task.check}" @click="task.check = !task.check">
 
           <span>{{task.text}}</span>
-          <i class="fa-solid fa-trash fa-beat"></i>
-          
+          <i @click.stop="remtsk(index)" class="fa-solid fa-trash fa-beat"></i>
+
         </li>
         
       </ul>
